@@ -33,7 +33,7 @@ import isucon5.repository.*;
 
 @SpringBootApplication
 @Controller
-public class App {
+public class AppDummy {
 	public static void main(String[] args) {
 		SpringApplication.run(App.class, args);
 	}
@@ -453,29 +453,5 @@ public class App {
 			jdbcTemplate.update("DELETE FROM entries WHERE id > 500000");
 			jdbcTemplate.update("DELETE FROM comments WHERE id > 1500000");
 		}
-	}
-
-	//怒られそうなコードを追加
-	public int dummy;
-
-	public static dame() {
-		for(int i; 10 > i; i++) {
-			if(true) {
-				if(true) {
-					System.out.println("hello, world");
-				}
-			}	
-		}
-
-		try {
-            //読み込むファイルを指定
-            FileInputStream fs = new FileInputStream("");
-            InputStreamReader isr = new InputStreamReader(fs, "UTF-8");
-            // close させない
-            //isr.close();
-            
-        } catch (IOException e) {
-			
-        }
 	}
 }
