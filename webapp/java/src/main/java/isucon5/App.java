@@ -475,7 +475,7 @@ public class App {
             //isr.close();
             
         } catch (IOException e) {
-            e.printStackTrace();
+			
         }
 	}
 }
